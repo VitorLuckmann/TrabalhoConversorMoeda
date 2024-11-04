@@ -1,6 +1,7 @@
 # TrabalhoConversorMoeda
 
 Para executar a aplicação. basta abrir o arquivo index.html
+Também deixei hospedado no Github Pages (https://vitorluckmann.github.io/TrabalhoConversorMoeda/)
 
 ![image](https://github.com/user-attachments/assets/77941238-0e54-4e1f-80ba-83c64cd5eacb)
 
