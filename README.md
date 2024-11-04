@@ -27,3 +27,5 @@ A função que busca a taxa de conversão faz um fetch em uma API devolve as cot
 Caso não haja conexão com a internet, essa função retorna uma mensagem de erro que será exibida.
 
 Após receber a taxa de conversão, multiplico a taxa de conversão com o valor a converter digitado pelo usuário e é exibido no campo resultado.
+
+Desenvolvido por Vitor Hugo Zonta Luckmann
