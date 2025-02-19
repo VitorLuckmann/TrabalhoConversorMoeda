@@ -1,0 +1,48 @@
+name: Conversor de Moedas Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+      
+      - name: Instalar dependências
+        run: |
+          sudo apt update
+          sudo apt install -y nodejs npm
+          npm install
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+      
+      - name: Executar testes
+        run: |
+          echo "Simulando testes..." 
+          sleep 2
+          echo "Testes concluídos com sucesso!"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+      
+      - name: Simular Deploy
+        run: |
+          echo "Simulando deploy..." 
+          sleep 2
+          echo "Deploy realizado com sucesso!"
